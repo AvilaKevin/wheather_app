@@ -37,10 +37,10 @@ export default function Store({ children }) {
             const data = await response.json();
 
             setValue({
-                temperature: data.main.temp,
+                temperature: Math.trunc(data.main.temp) + "°",
                 description: data.weather[0].description,
-                humidity: data.main.humidity,
-                wind_speed: data.wind.speed,
+                humidity: data.main.humidity + "%",
+                wind_speed: Math.trunc(data.wind.speed) + "km/h",
                 city: data.name,
                 country: data.sys.country,
                 error: null

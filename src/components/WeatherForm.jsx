@@ -2,13 +2,13 @@ import React from "react";
 import { useAppcontext } from "../Context/AppContext";
 
 // Render:
-// -Form
+// - Form
 // Props:
 // - AppContext(getWeather)
 
 function WeatherForm() {
 
-    //Context Called
+    // Context Called
     const AppContext = useAppcontext();
 
     return (

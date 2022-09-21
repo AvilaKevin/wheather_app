@@ -4,7 +4,7 @@ import { useAppcontext } from "../Context/AppContext";
 function WeatherInfo() {
     const AppContext = useAppcontext();
     return (
-        <div >
+        <div className="w-full h-full">
             {
                 AppContext.value.error &&
                 <div>
@@ -12,16 +12,20 @@ function WeatherInfo() {
                 </div>
             }
             {AppContext.value.temperature ?
-                <div >
+                <div className="w-full h-full text-xl">
                     <p>
                         Location: {AppContext.value.city}, {AppContext.value.country}
                     </p>
                     <p>
-                        Temperature: {AppContext.value.temperature}°C, {AppContext.value.description}
+                        Temperature: {AppContext.value.temperature}C
                     </p>
                     <p>
-                        Humidity: {AppContext.value.humidity}
+                        Description: {AppContext.value.description}
                     </p>
+                    <div className="w-full flex justify-between">
+                        <p>Humidity</p>
+                        <p>{AppContext.value.humidity}</p>
+                    </div>
                     <p>
                         Wind Speed: {AppContext.value.wind_speed}
                     </p>

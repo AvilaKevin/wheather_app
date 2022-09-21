@@ -15,7 +15,7 @@ function App() {
       <DinamicBackground>
         <WeatherMain />
 
-        <aside className='w-full bg-opacity-70 bg-[#0d242e] backdrop-blur-md text-white flex flex-col items-center p-6 sm:w-[40%]'>
+        <aside className='w-full bg-opacity-70 bg-[#0d242e] backdrop-blur-md text-white flex flex-col items-center p-5 lg:p-12 sm:w-[40%]'>
 
           <WeatherForm />
           <WeatherInfo />
