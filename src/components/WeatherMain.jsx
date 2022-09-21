@@ -21,12 +21,16 @@ function WeatherMain() {
 
     return (
 
-        <div>
-            <h1>{temperature}°C, {city}</h1>
-            <p>{date}</p>
-            <figure>
-                <img src={weatherIcon} />
-            </figure>
+        <div className='w-[60%]'>
+
+            <div>
+                <h1>{temperature}°C, {city}</h1>
+                <p>{date}</p>
+                <figure>
+                    <img src={weatherIcon} />
+                </figure>
+            </div>
+
         </div>
 
     )

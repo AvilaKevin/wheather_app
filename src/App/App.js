@@ -15,12 +15,12 @@ function App() {
       <DinamicBackground>
         <WeatherMain />
 
-        <div>
+        <aside className='w-full bg-opacity-70 bg-[#0d242e] backdrop-blur-md text-white flex flex-col items-center p-6 sm:w-[40%]'>
 
           <WeatherForm />
           <WeatherInfo />
 
-        </div>
+        </aside>
 
       </DinamicBackground>
 

@@ -3,10 +3,8 @@ import { useAppcontext } from "../Context/AppContext";
 
 function WeatherInfo() {
     const AppContext = useAppcontext();
-    // console.log(AppContext.value)
-    // console.log("prueba: " + AppContext.value.error)
     return (
-        <div>
+        <div >
             {
                 AppContext.value.error &&
                 <div>

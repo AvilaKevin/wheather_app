@@ -10,7 +10,7 @@ function DinamicBackground({ children }) {
 
 
     return (
-        <div style={{ background: `url(${appBackground})` }} className='h-screen flex justify-center'>
+        <div style={{ background: `url(${appBackground})` }} className='h-screen w-full flex justify-end flex-col-reverse sm:flex-row'>
             {children}
         </div>
     )
