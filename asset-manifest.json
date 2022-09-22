@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/wheather_app/static/css/main.ed15f4c5.css",
+    "main.js": "/wheather_app/static/js/main.34a22599.js",
+    "static/media/Rain.jpg": "/wheather_app/static/media/Rain.221ff32c1efd35117f68.jpg",
+    "static/media/Clouds.jpg": "/wheather_app/static/media/Clouds.36c813532a5d7c69bd55.jpg",
+    "static/media/Main.jpg": "/wheather_app/static/media/Main.8f531ddee16fb577c502.jpg",
+    "static/media/Snow.jpg": "/wheather_app/static/media/Snow.82ffd2f28212c320e263.jpg",
+    "static/media/Thunderstorm.jpg": "/wheather_app/static/media/Thunderstorm.f93fc0c1a06cd0c37301.jpg",
+    "static/media/AllWeathers.jpg": "/wheather_app/static/media/AllWeathers.242ead061f0ab4f7020e.jpg",
+    "static/media/Clear.jpg": "/wheather_app/static/media/Clear.6646625916308777ff90.jpg",
+    "index.html": "/wheather_app/index.html",
+    "main.ed15f4c5.css.map": "/wheather_app/static/css/main.ed15f4c5.css.map",
+    "main.34a22599.js.map": "/wheather_app/static/js/main.34a22599.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed15f4c5.css",
+    "static/js/main.34a22599.js"
+  ]
+}
