@@ -30,7 +30,7 @@ function WeatherForm() {
                 {/* Country Input */}
                 <div className="relative z-0 w-4/6">
                     <input
-                        type="text" name="country" autoFocus
+                        type="text" name="country"
                         placeholder=" "
                         className="block py-2.5 px-0 w-full text-lg sm:text-xl bg-transparent border-0 border-b-2 border-b-gray-500 focus:outline-none focus:border-b-gray-400 peer"
                     />

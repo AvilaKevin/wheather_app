@@ -5,6 +5,7 @@ import Thunderstorm from '../Icons/Thunderstorm.jpg'
 import Rain from '../Icons/Rain.jpg'
 import Snow from '../Icons/Snow.jpg'
 import Clear from '../Icons/Clear.jpg'
+import AllWeathers from '../Icons/AllWeathers.jpg'
 
 const AppContext = createContext();
 
@@ -77,6 +78,8 @@ export default function Store({ children }) {
                 case 'Clouds':
                     setAppBackground(Clouds);
                     break;
+                default:
+                    setAppBackground(AllWeathers);
             };
 
         } else {
