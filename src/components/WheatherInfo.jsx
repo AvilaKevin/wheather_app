@@ -1,10 +1,20 @@
 import React from "react";
 import { useAppcontext } from "../Context/AppContext";
 
+// Render:
+// - Weather Details
+// Props:
+// - AppContext(value)
+
 function WeatherInfo() {
+
+    // Context Called:
     const AppContext = useAppcontext();
+
     return (
+
         <div className="w-full h-full">
+
             {
                 AppContext.value.error &&
                 <div>
@@ -44,11 +54,14 @@ function WeatherInfo() {
                 </div>
                 :
                 <div >
-                    <p>No request yet</p>
+                    <h1 className="text-center sm:text-xl mt-4">No request yet</h1>
                 </div>
             }
+
         </div>
+
     )
+
 };
 
 export { WeatherInfo };

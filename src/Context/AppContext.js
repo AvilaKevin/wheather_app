@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useState } from 'react';
-import { WHEATHER_KEY } from '../keys';
 import Main from '../Icons/Main.jpg';
 import Clouds from '../Icons/Clouds.jpg'
 import Thunderstorm from '../Icons/Thunderstorm.jpg'
@@ -16,8 +15,10 @@ export default function Store({ children }) {
     // Store the Background:
     const [appBackground, setAppBackground] = useState(Main);
     // Store the Icon:
-    const [weatherIcon, setWeatherIcon] = useState()
+    const [weatherIcon, setWeatherIcon] = useState();
 
+    // APPI KEY:
+    const WHEATHER_KEY = process.env.REACT_APP_WHEATHER_KEY;
 
     //API CONSUMER:
     const getWeather = async (e) => {
@@ -76,7 +77,7 @@ export default function Store({ children }) {
                 case 'Clouds':
                     setAppBackground(Clouds);
                     break;
-            }
+            };
 
         } else {
             setValue({ error: 'Please enter a city and a country' })
