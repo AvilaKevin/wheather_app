@@ -1,4 +1,4 @@
-# WeatherApp 🌦️
+<h1 align="center">🌤 Wheater App</h1>
 
 ### 📄 Description: 
 
@@ -25,17 +25,17 @@ https://home.openweathermap.org/users/sign_up
 3.
 
 ```sh
-	# Clone this project
-	$ git clone https://github.com/AvilaKevin/wheather_app
-	# Access
-	$ cd wheather_app
-	# Install dependencies
-	$ yarn or npm
-	# Save the API key in AppContext.js
-	const WHEATHER_KEY = YOUR KEY;
-	# Run the project
-	$ yarn start or npm start
-	# The server will initialize in the <http://localhost:3000>
+# Clone this project
+$ git clone https://github.com/AvilaKevin/wheather_app
+# Access
+$ cd wheather_app
+# Install dependencies
+$ yarn or npm
+# Save the API key in AppContext.js
+const WHEATHER_KEY = YOUR KEY;
+# Run the project
+$ yarn start or npm start
+# The server will initialize in the <http://localhost:3000>
 ```
 
 ------------
