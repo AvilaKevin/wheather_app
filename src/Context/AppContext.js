@@ -36,6 +36,7 @@ export default function Store({ children }) {
 
             const data = await response.json();
 
+
             setValue({
                 temperature: Math.trunc(data.main.temp) + "°",
                 description: data.weather[0].description,
@@ -43,6 +44,7 @@ export default function Store({ children }) {
                 wind_speed: Math.trunc(data.wind.speed) + "km/h",
                 city: data.name,
                 country: data.sys.country,
+                cloudy: data.clouds.all + "%",
                 error: null
             });
 
@@ -57,27 +59,21 @@ export default function Store({ children }) {
             const main = data.weather[0].main;
             switch (main) {
                 case 'Thunderstorm':
-                    console.log('Thunderstorm');
                     setAppBackground(Thunderstorm);
                     break;
                 case 'Drizzle':
-                    console.log('Drizzle');
                     setAppBackground(Rain);
                     break;
                 case 'Rain':
-                    console.log('Rain');
                     setAppBackground(Rain);
                     break;
                 case 'Snow':
-                    console.log('Snow');
                     setAppBackground(Snow);
                     break;
                 case 'Clear':
-                    console.log('Clear');
                     setAppBackground(Clear);
                     break;
                 case 'Clouds':
-                    console.log('Clouds');
                     setAppBackground(Clouds);
                     break;
             }
