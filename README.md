@@ -2,7 +2,7 @@
 
 ### 📄 Description: 
 
-Web application that gives a description of the time depending on the city and country
+Web application that gives a description of the weather depending on the city and country
 
 ------------
 
